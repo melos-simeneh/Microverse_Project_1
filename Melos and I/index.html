@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melos and I Survery Form</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <div>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">This is my Survey Form</p>
+    </div>
+
+    <form action="" id="survey-form">
+      <fieldset>
+        <label id="name-label">
+          Name
+          <input
+            type="text"
+            id="name"
+            placeholder="Melos and I"
+            class="current-role"
+            required
+          />
+        </label>
+        <label id="email-label">
+          Email Address
+          <input
+            type="email"
+            id="email"
+            placeholder="sample@email.com"
+            class="current-role"
+            required
+        /></label>
+        <label id="number-label">
+          Age (optional)
+          <input
+            type="number"
+            min="10"
+            max="20"
+            id="number"
+            placeholder="Age"
+            class="current-role"
+            required
+        /></label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          Which option best describes your current role?
+          <select name="role" class="current-role" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="nil">Prefer no to say</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          <p>Would you recommend us to a friend?</p>
+          <div class="check">
+            <input
+              type="radio"
+              name="recommend"
+              value="definitely"
+              class="input-element"
+              checked
+            />
+            Definitely
+          </div>
+          <div class="check">
+            <input
+              type="radio"
+              name="recommend"
+              value="maybe"
+              class="input-element"
+            />
+            Maybe
+          </div>
+          <div class="check">
+            <input
+              type="radio"
+              name="recommend"
+              value="not-sure"
+              class="input-element"
+            />
+            Not sure
+          </div>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          What is your favorite feature?
+          <select name="feature" id="dropdown" class="current-role">
+            <option value="">Select an option</option>
+            <option value="">Challenges</option>
+            <option value="">Projects</option>
+            <option value="">Community</option>
+            <option value="">Open Source</option>
+            <option value="">Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          <div>
+            <h3>What would you like to see improved?</h3>
+          </div>
+
+          <div class="check">
+            <input
+              type="checkbox"
+              name="improvements"
+              value="front-end"
+              class="input-element"
+            />
+            Front-end Projects
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="improvements"
+              value="back-end"
+              class="input-element"
+            />
+            Back-end Projects
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="improvements"
+              value="data-visual"
+              class="input-element"
+            />
+            Data Visualization
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="improvements"
+              value="challenge"
+              class="input-element"
+            />
+            Challenges
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="improvements"
+              value="open-source"
+              class="input-element"
+            />
+            Open Source Community
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="improvements"
+              value="gitter"
+              class="input-element"
+            />
+            Gitter help rooms
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="improvements"
+              value="videos"
+              class="input-element"
+            />
+            Videos
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="improvements"
+              value="city-meetups"
+              class="input-element"
+            />
+            City Meetups
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="improvements"
+              value="wiki"
+              class="input-element"
+            />
+            Wiki
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="improvements"
+              value="forum"
+              class="input-element"
+            />
+            Forum
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="improvements"
+              value="addtional-courses"
+              class="input-element"
+            />
+            Additional Courses
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="improvements"
+              value="other"
+              class="input-element"
+            />
+            Others
+          </div>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <div>
+          <h3>Any Comments or Suggestions?</h3>
+          <label>
+            <textarea
+              name="comment"
+              placeholder="Enter your text here..."
+              cols="20"
+              rows="10"
+              class="my-text-area"
+            ></textarea>
+          </label>
+
+          <div class="submit-btn">
+            <button type="submit" id="submit" class="btn">Submit</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
